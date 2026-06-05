@@ -30,7 +30,7 @@ jobs:
       - name: Run MLProject
         run: |
           cd MLProject
-          mlflow run . --env-manager local
+          mlflow run . --env-manager local --experiment-name Heart_Disease_RF_Basic
 
       - name: Upload MLflow Artifacts
         uses: actions/upload-artifact@v4
